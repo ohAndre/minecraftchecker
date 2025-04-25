@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Regular';
+    src: url('font/Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('font/Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BoldItalic';
+    src: url('font/BoldItalic.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Italic';
+    src: url('font/Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Bold';
+    background: url('img/background.png'); /* Minecraft dirt texture */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+  }
+  
+  .checker-container {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 0 15px #000;
+  }
+  
+  input {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+  }
+  
+  button {
+    font-family: 'Regular', sans-serif;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #0073ff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background-color: #009ceb;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .server-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(46, 46, 46, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: 0 0 15px #000;
+    text-align: left;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .server-icon {
+    width: 96px;
+    height: 96px;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 12px;
+    margin-right: 25px;
+  }
+  
+  .server-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .server-ip {
+    color: #123dcc;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .server-motd {
+    color: #FFFFFF;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .server-players {
+    color: #6d6d6d;
+    font-size: 15px;
+    margin: 0;
+
+  }
+
+  .offline {
+    color: #cc0000;
+    font-size: 15px;
+    margin: 0;
+
+  }
+
+  input{
+    width: 350px;
+  }
+  
+  button{
+    width: 140px;
+    height: 40px;
+  }
+
+@media screen and (max-width: 768px) {
+  .checker-container {
+    padding: 15px;
+    width: 90%;
+  }
+
+  input {
+    width: 80% !important;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 80% !important;
+    margin-left: 0;
+  }
+
+  .server-card {
+    padding: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .server-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .server-info {
+    align-items: center;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  .giocatori{
+    color: aqua;
+  }
+
+  .offline{
+    color: red;
+  }
+}
