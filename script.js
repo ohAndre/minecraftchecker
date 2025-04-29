@@ -46,6 +46,9 @@ async function checkServer() {
         playerListText.textContent = "";
         serverIcon.classList.add("hidden");
       }
+      if (data.motd.clean.join(" ").includes("offline")) {
+        playerListText.textContent = "Il server e' offline";
+      }
 
     } else {
       statusText.textContent = "❌ Server OFFLINE";
